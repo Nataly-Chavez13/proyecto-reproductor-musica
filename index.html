@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="">Spotify</a>
+
+      <div class="content-login">
+        <a href="./login.html"><i class="bi bi-person-circle"></i></a>
+      </div>
+
+      <div class="content-buscador">
+        <span>Buscador</span>
+        <div class="buscador">
+          <div class="input-buscador">
+            <input type="text" id="inputBuscador">
+            <i class="bi bi-search"></i>
+          </div>
+          <button id="btnBuscar" class="btn-buscar">Buscar</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contenedor-listas">
+      <div class="lista buscador">
+        <h4>Resultados del Buscador</h4>
+
+        <div id="buscador" class="lista-items">
+          <ul id="lista-buscar">
+            <li class="item">
+
+              <div id="iconosBuscar" class="iconos">
+                <button id="playBuscador" class="bi bi-play-fill"></button>
+                <button id="favBuscador" class="bi bi-heart"></button>
+                <button id="anadirBuscador" class="bi bi-plus"></button>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div id="listaPlaylist" class="lista playlist resulBuscadorPlaylist">
+        <h4>My Playlist</h4>
+
+        <div id="listaPlaylistCanciones" class="lista-items ">
+
+
+        </div>
+
+
+      </div>
+
+      <div id="listaFavoritos" class="lista favoritos resulBuscadorFavoritos">
+        <h4>Favoritos</h4>
+
+        <div id="listaFavoritosCanciones" class="lista-items">
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+    <div id="contenedor-portada" class="contenedor-portada">
+      <img src="./imagenes/SimplementeAmigos.jpeg" alt="" />
+      <div class="descripcion">
+        <h3>Simplemente Amigos</h3>
+        <ul>
+          <li><b>Artista:</b> Ana Gabriela</li>
+          <li><b>Duración:</b> 4:20</li>
+          <li><b>Género:</b> Balada</li>
+          <li><b>Año:</b> 2013</li>
+        </ul>
+      </div>
+
+      <div class="botones">
+        <i class="bi bi-skip-backward-circle"></i>
+        <i id="botonPlay" class="bi bi-play-circle"></i>
+        <i class="bi bi-fast-forward-circle"></i>
+        <i id="botonpause" class="bi bi-pause-circle"></i>
+        <i id="botonstop" class="bi bi-stop-circle"></i>
+
+      </div>
+    </div>
+  </main>
+  <script src="./main2.js"></script>
+</body>
+
+</html>
